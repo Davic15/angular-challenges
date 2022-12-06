@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { TitleStrategy } from '@angular/router';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 

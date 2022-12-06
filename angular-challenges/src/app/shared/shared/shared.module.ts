@@ -4,7 +4,6 @@ import { CardComponent } from 'src/app/components/card/card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
-
 @NgModule({
   declarations: [
     CardComponent,
