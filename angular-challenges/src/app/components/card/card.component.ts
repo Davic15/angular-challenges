@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { IconDefinition, IconName, IconProp, IconStyle } from '@fortawesome/fontawesome-svg-core';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faInfoCircle, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-card',
