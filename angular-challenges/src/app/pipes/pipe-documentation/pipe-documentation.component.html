@@ -1,3 +1,14 @@
+<!-- Flatten Pipe -->
+<app-card [title]="'Flatten'" [subTitle]="'Pipes'">
+    <div body>
+        {{ flattenData | appFlatten}}
+    </div>
+    <div class="footer" footer>
+        <button (click)="modifyFlatten()">Modify</button>
+        <button (click)="reassignFlatten()">Reassign</button>
+    </div>
+</app-card>
+
 <!-- Credit Card Formatter -->
 <app-card [title]="'Truncate'" [subTitle]="'Pipes'">
     <div body>
