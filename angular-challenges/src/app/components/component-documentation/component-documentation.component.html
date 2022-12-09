@@ -1,3 +1,44 @@
+<!-- Debounce Search -->
+<app-card [title]="'Debounce Search'" [subTitle]="'Components'">
+    <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
+</app-card>
+
+<!-- Rich Text Viewer -->
+<app-card [title]="'Rich Text Viewer'" [subTitle]="'Components'">
+    <div body>
+        <div>
+            <h3>Good Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'">
+            </app-rich-text-viewer>
+        </div>
+        <div>
+            <h3>Empty Example</h3>
+            <app-rich-text-viewer [htmlText]="'...'">
+            </app-rich-text-viewer>
+        </div>
+        <div>
+            <h3>Bad HTML Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World'">
+            </app-rich-text-viewer>
+        </div>
+    </div>
+</app-card>
+<!-- Toggle -->
+<app-card [title]="'Toggle'" [subTitle]="'Components'">
+    <app-toggle [isOn]="toggleValue" body>
+    </app-toggle>
+</app-card>
+<!-- Quote -->
+<app-card [title]="'Quote'" [subTitle]="'Components'">
+    <app-quote 
+        body 
+        [quote]="'Get Good. Get Great. Get Better'"
+        [author]="'Franklin David Macias Avellan'"
+        [occupation]="'Software Engineer, Front-end web developer'"
+    >
+    </app-quote>
+</app-card>
+
 <!-- Modal -->
 <app-card [title]="'Modal'" [subTitle]="'Components'">
     <div body>

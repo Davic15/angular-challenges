@@ -1,3 +1,9 @@
+<!-- Filter Term -->
+<app-card [title]="'Filter Term'" [subTitle]="'Pipes'">
+    <div body>
+        {{ ['Hello', 'World', 'Hello World'] | appFilterTerm: 'Hello'}}
+    </div>
+</app-card>
 <!-- Flatten Pipe -->
 <app-card [title]="'Flatten'" [subTitle]="'Pipes'">
     <div body>
