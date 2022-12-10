@@ -25,6 +25,11 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
+import { SearchListComponent } from './components/search-list/search-list.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { SimpleTableComponent } from './components/simple-table/simple-table.component';
+import { PagingComponent } from './components/paging/paging.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +51,11 @@ import { DebounceSearchComponent } from './components/debounce-search/debounce-s
     ToggleComponent,
     RichTextViewerComponent,
     DebounceSearchComponent,
+    SearchListComponent,
+    CounterComponent,
+    SimpleTableComponent,
+    PagingComponent,
+    TabsComponent,
   ],
   imports: [
     BrowserModule,

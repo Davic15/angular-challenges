@@ -19,7 +19,14 @@ export class ComponentDocumentationComponent {
       content: 'Example Content 2',
       isExpanded: false
     }
-  ]
+  ];
+
+  public tabs: {title: string, active: boolean}[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false}
+  ];
+  public selectedTab = 0;
+
   public progressValue = 25;
   public loaderType = LoaderType.Loading;
   public toggleValue = false;

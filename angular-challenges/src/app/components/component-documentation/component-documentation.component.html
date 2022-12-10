@@ -1,3 +1,32 @@
+<!-- Tabs -->
+<app-card [title]="'Tabs'" [subTitle]="'Components'">
+    <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
+        <app-paging *ngIf="selectedTab === 0" [totalItems]="200"></app-paging>
+        <app-counter *ngIf="selectedTab === 1"></app-counter>
+    </app-tabs>
+</app-card>
+
+<!-- Pagin -->
+<app-card [title]="'Paging'" [subTitle]="'Components'">
+    <app-paging body [totalItems]="200"></app-paging>
+</app-card>
+
+<!-- Simple Table -->
+<app-card [title]="'Simple Table'" [subTitle]="'Components'">
+    <app-simple-table body></app-simple-table>
+</app-card>
+
+<!-- Counter -->
+<app-card [title]="'Counter'" [subTitle]="'Components'">
+    <app-counter body></app-counter>
+</app-card>
+
+<!-- Search List -->
+<app-card [title]="'Search List'" [subTitle]="'Components'">
+    <app-search-list body [items]="['United States', 'Mexico', 'United Arab Emirates']">
+    </app-search-list>
+</app-card>
+
 <!-- Debounce Search -->
 <app-card [title]="'Debounce Search'" [subTitle]="'Components'">
     <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
