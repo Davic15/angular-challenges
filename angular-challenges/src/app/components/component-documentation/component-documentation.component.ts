@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { RibbonType } from '../ribbon/ribbon-types';
+import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -34,5 +36,9 @@ export class ComponentDocumentationComponent {
   public debounceExampleMethod(value: string): void {
     console.log('Component Documentation', value);
   }
+
+  public RibbonType = RibbonType;
+  public RibbonLocation = RibbonLocation;
+  public ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.BottomLeft };
 
 }

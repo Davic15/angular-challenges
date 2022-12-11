@@ -1,10 +1,9 @@
 import { Routes } from "@angular/router";
-import { ComponentDocumentationComponent } from "./components/component-documentation/component-documentation.component";
-import { ServiceDocumentationComponent } from "./services/service-documentation/service-documentation.component";
 
 export const APP_ROUTES: Routes = [
-    { path: '', component: ComponentDocumentationComponent },
+    { path: '', loadChildren: () => import('./components/components.module').then((m) => m.ComponentsModule) },
     { path: 'directives', loadChildren: () => import('./directives/directive.module').then((m) => m.DirectiveModule) },
     { path: 'pipes', loadChildren: () => import('./pipes/pipes.module').then((m) => m.PipesModule) },
-    { path: 'services', component: ServiceDocumentationComponent }
+    { path: 'other', loadChildren: () => import('./other/other.module').then((m) => m.OtherModule) },
+    { path: 'services', loadChildren: () => import('./services/services.module').then((m) => m.ServicesModule) }
 ]

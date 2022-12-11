@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-
 @Component({
   selector: 'app-twitter-post',
   templateUrl: './twitter-post.component.html',
