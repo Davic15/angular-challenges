@@ -24,6 +24,8 @@ import { ToggleComponent } from "./toggle/toggle.component";
 import { TwitterPostComponent } from "./twitter-post/twitter-post.component";
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 
 @NgModule({
     declarations: [
@@ -45,7 +47,9 @@ import { RibbonComponent } from './ribbon/ribbon.component';
         ToggleComponent,
         TwitterPostComponent,
         EmailFormComponent,
-        RibbonComponent
+        RibbonComponent,
+        ButtonToggleComponent,
+        BannerCutOutComponent
     ],
     imports: [
         CommonModule,
