@@ -1,6 +1,29 @@
-<h1>Components</h1>
+<app-banner-cut-out [title]="'Components'"></app-banner-cut-out>
 <hr>
 
+<!-- Countdown Timer-->
+<app-card [title]="'Countdown Timer'" [subTitle]="'Components'">
+    <app-countdown-timer body [time]="'Aug 15, 2023 11:33:44'"></app-countdown-timer>
+</app-card>
+
+<!-- Simple Popup -->
+<app-card [title]="'Simple Popup'" [subTitle]="'Components'">
+    <div body>
+        <app-simple-popup [message]="'Simple Popup Component'">
+            <h1>Hello World</h1>
+        </app-simple-popup>
+    </div>
+</app-card>
+
+<!-- Snackbar -->
+<app-card [title]="'Snackbar'" [subTitle]="'Components'">
+    <div body>
+        <app-snackbar [message]="'Snackbar Example'"></app-snackbar>
+        <button (click)="snackbarShow()">Show Snackbar</button>
+    </div>
+</app-card>
+
+<!-- Banner Cut Out -->
 <app-card [title]="'Cut Out'" [subTitle]="'Components'">
     <app-banner-cut-out [title]="'100 Angular Challenges'" body></app-banner-cut-out>
 </app-card>

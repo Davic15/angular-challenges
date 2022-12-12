@@ -25,7 +25,8 @@ import { TwitterPostComponent } from "./twitter-post/twitter-post.component";
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
-import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @NgModule({
     declarations: [
@@ -49,7 +50,8 @@ import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component
         EmailFormComponent,
         RibbonComponent,
         ButtonToggleComponent,
-        BannerCutOutComponent
+        SimplePopupComponent,
+        CountdownTimerComponent
     ],
     imports: [
         CommonModule,

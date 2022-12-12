@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonType } from '../ribbon/ribbon-types';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -48,4 +49,8 @@ export class ComponentDocumentationComponent {
     new ButtonMeta({ id: 3, title: 'Underline' })
   ]
 
+  @ViewChild(SnackbarComponent) public snackBar!: SnackbarComponent;
+  public snackbarShow(): void {
+    this.snackBar.showMessage('Snackbar Example');
+  }
 }
