@@ -27,6 +27,12 @@ import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { FooterComponent } from './footer/footer.component';
+import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
+import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { FieldsetComponent } from './fieldset/fieldset.component';
+import { PillComponent } from './pill/pill.component';
 
 @NgModule({
     declarations: [
@@ -51,7 +57,13 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
         RibbonComponent,
         ButtonToggleComponent,
         SimplePopupComponent,
-        CountdownTimerComponent
+        CountdownTimerComponent,
+        FooterComponent,
+        SkeletonLoaderComponent,
+        SocialMediaBarComponent,
+        BottomSheetComponent,
+        FieldsetComponent,
+        PillComponent
     ],
     imports: [
         CommonModule,

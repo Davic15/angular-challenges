@@ -1,5 +1,53 @@
 <app-banner-cut-out [title]="'Components'"></app-banner-cut-out>
-<hr>
+
+<!-- Fieldset -->
+<app-card [title]="'Fieldset'" [subTitle]="'Components'">
+    <div body>
+        <app-fieldset [legend]="'Address'">
+            <app-email-form></app-email-form>
+        </app-fieldset>
+    </div>
+</app-card>
+
+<!-- Bottom Sheet -->
+<app-card [title]="'Botton Sheet'" [subTitle]="'Components'">
+    <div body>
+        <app-bottom-sheet #bottomSheet>
+            <h1 (click)="bottomSheet.hide()">Hello</h1>
+            <h1 (click)="bottomSheet.show()">World</h1>
+        </app-bottom-sheet>
+        <div class="footer" footer>
+            <button (click)="bottomSheet.show()">Show</button>
+        </div>
+    </div>
+</app-card>
+
+<!-- Social Media Bar -->
+<app-card [title]="'Social Media Bar'" [subTitle]="'Components'">
+    <div body>
+        <app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
+    </div>
+</app-card>
+
+<!-- Skeleton Component -->
+<app-card [title]="'Skeleton Loader'" [subTitle]="'Components'">
+    <div body>
+        <app-skeleton-loader *ngIf="!loaded"></app-skeleton-loader>
+        <p *ngIf="loaded">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.
+        </p>
+    </div>
+    <button footer (click)="loaded = !loaded">Toggle</button>
+</app-card>
+
+<!-- Footer -->
+<app-card [title]="'Footer'" [subTitle]="'Component'">
+    <app-footer body></app-footer>
+</app-card>
 
 <!-- Countdown Timer-->
 <app-card [title]="'Countdown Timer'" [subTitle]="'Components'">

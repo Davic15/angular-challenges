@@ -5,6 +5,8 @@ import { RibbonType } from '../ribbon/ribbon-types';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
+import { SocialMedia } from '../social-media-bar/models/social-media.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -53,4 +55,15 @@ export class ComponentDocumentationComponent {
   public snackbarShow(): void {
     this.snackBar.showMessage('Snackbar Example');
   }
+
+  public loaded = false;
+
+  public socialMedia: SocialMediaIcon[] = [
+    { href: 'https://www.facebook.com/franklin.maciasavellan/', type: SocialMedia.Facebook },
+    { href: 'https://www.instagram.com/franklin.macias864/', type: SocialMedia.Instagram },
+    { href: 'https://www.linkedin.com/in/franklin-david-macias-avellan-704030188/', type: SocialMedia.LinkedIn },
+    { href: 'https://twitter.com/FrankDavic', type: SocialMedia.Twitter },
+    { href: 'https://www.youtube.com/', type: SocialMedia.YouTube }
+  ];
+
 }

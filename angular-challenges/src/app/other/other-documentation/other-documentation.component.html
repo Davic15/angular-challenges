@@ -1,5 +1,13 @@
 <app-banner-cut-out [title]="'Other'" [imageUrl]="'assets/back-5.jpg'"></app-banner-cut-out>
 
+<!-- Slide Right - Tab Component -->
+<app-card [title]="'Slide Right'" [subTitle]="'Other - Animation'">
+    <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+        <h1 @slideRightAnimation *ngIf="selectedTab === 0">Tab 1 Example</h1>
+        <h1 @slideRightAnimation *ngIf="selectedTab === 1">Tab 2 Example</h1>
+    </app-tabs>
+</app-card>
+
 <!-- Guard -->
 <app-card [title]="'Form Dirty Guard'" [subTitle]="'Other - Guard'">
     <div body>
