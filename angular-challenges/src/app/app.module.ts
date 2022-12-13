@@ -10,12 +10,14 @@ import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     TopOfPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
 import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
 import { SocialMedia } from '../social-media-bar/models/social-media.enum';
+import { PillType } from '../pill/model/pill-type.enum';
+import { faTag } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-component-documentation',
@@ -14,6 +16,7 @@ import { SocialMedia } from '../social-media-bar/models/social-media.enum';
   styleUrls: ['./component-documentation.component.scss']
 })
 export class ComponentDocumentationComponent {
+  faTag = faTag;
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
@@ -65,5 +68,7 @@ export class ComponentDocumentationComponent {
     { href: 'https://twitter.com/FrankDavic', type: SocialMedia.Twitter },
     { href: 'https://www.youtube.com/', type: SocialMedia.YouTube }
   ];
+
+  public PillType = PillType;
 
 }

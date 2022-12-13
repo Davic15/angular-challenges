@@ -1,5 +1,12 @@
 <app-banner-cut-out [title]="'Pipes'" [imageUrl]="'assets/back-4.jpg'"></app-banner-cut-out>
 
+<!-- Rich Text -->
+<app-card [title]="'Rich Text'" [subTitle]="'Pipes'">
+    <div body>
+        <div [innerHTML]="html | richText"></div>
+    </div>
+</app-card>
+
 <!-- Filter Term -->
 <app-card [title]="'Filter Term'" [subTitle]="'Pipes'">
     <div body>

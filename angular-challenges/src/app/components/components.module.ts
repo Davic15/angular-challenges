@@ -33,37 +33,40 @@ import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.com
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
+import { PillFiltersComponent } from './pill-filters/pill-filters.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PasswordComponent } from './password/password.component';
 
 @NgModule({
     declarations: [
         ComponentDocumentationComponent,
         AccordionComponent,
-        CounterComponent,
-        CreditCardInputComponent,
-        DebounceSearchComponent,
-        LinkedinPostComponent,
-        LoaderComponent,
-        PagingComponent,
         ProgressBarComponent,
+        StarRatingsComponent,
+        CreditCardInputComponent,
+        LoaderComponent,
+        TwitterPostComponent,
+        LinkedinPostComponent,
+        ToggleComponent,
         QuoteComponent,
         RichTextViewerComponent,
+        DebounceSearchComponent,
         SearchListComponent,
+        CounterComponent,
         SimpleTableComponent,
+        PagingComponent,
         SortTableComponent, 
-        StarRatingsComponent,
-        ToggleComponent,
-        TwitterPostComponent,
         EmailFormComponent,
         RibbonComponent,
         ButtonToggleComponent,
         SimplePopupComponent,
         CountdownTimerComponent,
-        FooterComponent,
         SkeletonLoaderComponent,
-        SocialMediaBarComponent,
         BottomSheetComponent,
         FieldsetComponent,
-        PillComponent
+        PillComponent,
+        PillFiltersComponent,
+        PasswordComponent
     ],
     imports: [
         CommonModule,
