@@ -17,6 +17,7 @@ import { faTag } from '@fortawesome/free-solid-svg-icons';
 })
 export class ComponentDocumentationComponent {
   faTag = faTag;
+  public isShownOverlay = false;
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',

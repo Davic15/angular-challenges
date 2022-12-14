@@ -6,6 +6,7 @@ import { ServiceDocumentationComponent } from "./service-documentation/service-d
 import { SERVICES_ROUTES } from "./services.routes";
 import { SharedModule } from "../shared/shared/shared.module";
 import { UserService } from "./user/user.service";
+import { LocalStorageService } from "./local-storage/local-storage.service";
 
 @NgModule({
     declarations: [
@@ -18,7 +19,9 @@ import { UserService } from "./user/user.service";
         RouterModule.forChild(SERVICES_ROUTES)
     ],
     providers: [
-        UserService
+        UserService,
+        LocalStorageService,
+        { provide: 'LocalStorage', useValue: window.localStorage }
     ]
 })
 export class ServicesModule { }

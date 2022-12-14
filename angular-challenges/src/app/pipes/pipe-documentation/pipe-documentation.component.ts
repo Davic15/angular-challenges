@@ -19,4 +19,12 @@ export class PipeDocumentationComponent {
     this.flattenData = [...this.flattenData];
   }
 
+  public stringArray: string[] = ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
+
+  public objectArray: { [key: string]: string; }[] = [
+    { content: 'Courses' },
+    { content: 'YouTube' },
+    { content: 'Twitter' },
+    { content: 'LinkedIn' },
+  ];
 }

@@ -1,5 +1,28 @@
 <app-banner-cut-out [title]="'Pipes'" [imageUrl]="'assets/back-4.jpg'"></app-banner-cut-out>
 
+<!-- Sort by key -->
+<app-card [title]="'Sort by Key'" [title]="'Pipes'">
+    <div body>
+        <h5>String Ascending</h5>
+        <p *ngFor="let obj of objectArray | sortByKey : 'content'">{{ obj['content']  }}</p>
+
+        <h5>String Descending</h5>
+        <p *ngFor="let obj of objectArray | sortByKey : 'content' : false">{{ obj['content']  }}</p>
+    </div>
+</app-card>
+
+<!-- Sort by -->
+<app-card [title]="'Sort By'" [subTitle]="'Pipes'">
+    <div body>
+        <h5>String Ascending</h5>
+        <p>{{ stringArray | sortBy }}</p>
+
+        <h5>String Descending</h5>
+        <p>{{ stringArray | sortBy: false }}</p>
+    </div>
+</app-card>
+
+
 <!-- Rich Text -->
 <app-card [title]="'Rich Text'" [subTitle]="'Pipes'">
     <div body>
