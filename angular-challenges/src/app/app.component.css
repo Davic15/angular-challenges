@@ -13,3 +13,7 @@ main {
 li {
     cursor: pointer;
 }
+
+.active {
+    border-bottom: 2px solid white;
+}

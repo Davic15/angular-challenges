@@ -1,5 +1,19 @@
 <app-banner-cut-out [title]="'Directives'" [imageUrl]="'assets/back-2.jpg'"></app-banner-cut-out>
 
+<!-- Auto Focus -->
+<app-card [title]="'Auto Focus'" [subTitle]="'Directives'">
+    <div body>
+        <app-modal #modal>
+            <div *ngIf="!modal.isHidden">
+                <input type="text" appAutoFocus>
+            </div>
+        </app-modal>
+    </div>
+    <div footer class="footer">
+        <button (click)="modal.open()">Call Modal</button>
+    </div>
+</app-card>
+
 <!-- Copy -->
 <app-card [title]="'Copy'" [subTitle]="'Directives'">
     <button 
