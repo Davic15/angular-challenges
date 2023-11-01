@@ -13,21 +13,24 @@ import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    TopOfPageComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule,
-    SharedModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    RouterModule.forRoot(APP_ROUTES)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ToolbarComponent,
+        TopOfPageComponent,
+        NotFoundComponent
+    ],
+    imports: [
+        BrowserModule,
+        FontAwesomeModule,
+        SharedModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        RouterModule.forRoot(APP_ROUTES)
+    ],
+    providers: [],
+    exports: [
+        ToolbarComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
